@@ -2,45 +2,83 @@
 <html lang="de">
 <head>
 <meta charset="UTF-8">
-<title>ValeSMP - Minecraft Server</title>
+<title>ValeSMP</title>
+
 <style>
+
 body{
-    font-family: Arial;
     margin:0;
-    background:#1e1e1e;
+    font-family: "Trebuchet MS", sans-serif;
+    background:#111;
     color:white;
 }
 
+/* Navbar */
+
 nav{
-    background:#111;
+    background:#1b1b1b;
     padding:15px;
     text-align:center;
+    border-bottom:3px solid #ffb300;
 }
 
 nav a{
-    color:white;
+    color:#ffcc33;
     margin:0 20px;
     text-decoration:none;
     font-weight:bold;
+    font-size:18px;
 }
+
+nav a:hover{
+    color:#ffa000;
+}
+
+/* Header */
 
 header{
     text-align:center;
-    padding:60px;
-    background:linear-gradient(135deg,#00c6ff,#0072ff);
+    padding:80px 20px;
+    background:linear-gradient(180deg,#ffcc33,#ff9800);
+    color:black;
 }
 
+header h1{
+    font-size:60px;
+    margin:0;
+}
+
+header p{
+    font-size:20px;
+}
+
+/* Box */
+
 .container{
-    padding:40px;
+    padding:60px;
     text-align:center;
 }
 
-.server-box{
-    background:#2a2a2a;
-    padding:30px;
-    border-radius:10px;
-    display:inline-block;
+.box{
+    background:#1e1e1e;
+    padding:40px;
+    max-width:500px;
+    margin:auto;
+    border:2px solid #ffb300;
 }
+
+.ip{
+    font-size:26px;
+    color:#ffcc33;
+}
+
+footer{
+    margin-top:60px;
+    padding:20px;
+    text-align:center;
+    background:#1b1b1b;
+}
+
 </style>
 </head>
 
@@ -54,20 +92,28 @@ header{
 
 <header>
 <h1>ValeSMP</h1>
-<p>Offizieller Minecraft Server</p>
+<p>Minecraft Survival Server</p>
 </header>
 
 <div class="container">
-<div class="server-box">
-<h2>Server Informationen</h2>
 
-<p><b>Server IP:</b> valesmp.de</p>
-<p><b>Version:</b> Java Edition</p>
-<p><b>Gamemode:</b> Survival SMP</p>
-<p><b>Community Server</b></p>
+<div class="box">
+
+<h2>Server Infos</h2>
+
+<p class="ip">IP: valesmp.de</p>
+
+<p>Gamemode: Survival SMP</p>
+<p>Version: Java</p>
+<p>Community Server</p>
 
 </div>
+
 </div>
+
+<footer>
+ValeSMP Minecraft Server
+</footer>
 
 </body>
 </html>
